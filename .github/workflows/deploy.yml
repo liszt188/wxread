@@ -6,8 +6,15 @@ concurrency:
 
 on:
   schedule:
-    # 凌晨任务：北京时间
     - cron: '18 6 * * *'
+      timezone: 'Asia/Shanghai'
+    - cron: '22 10 * * *'
+      timezone: 'Asia/Shanghai'
+    - cron: '19 13 * * *'
+      timezone: 'Asia/Shanghai'
+    - cron: '16 17 * * *'
+      timezone: 'Asia/Shanghai'
+    - cron: '12 20 * * *'
       timezone: 'Asia/Shanghai'
   workflow_dispatch:  # 手动触发
 
